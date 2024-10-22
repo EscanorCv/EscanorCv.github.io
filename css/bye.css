@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../img/capibaras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 110vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(248, 161, 176), rgb(250, 208, 215));
+    opacity: 0.6;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px -1px 0 white,
+    -1px 1px 0 white;
+    font-size: 40px;
+    color: rgb(250, 105, 129);
+}
+
+.imagen{
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+img{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+}
+
+.texto{
+    font-size: 20px;
+    margin: auto;
+    width: 500px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.video p{
+    font-size: 35px;
+    color: rgb(250, 105, 129);
+    text-transform: uppercase;
+    text-shadow: 1px -1px 0 white,
+    -1px 1px 0 white;
+    margin-top: 50px;
+}
+
+.video{
+    position: relative;
+    margin: 0;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    padding: 70px;
+    background: linear-gradient(45deg, rgb(243, 147, 163), rgb(240, 160, 177));
+    opacity: 0.9;
+}
+
+footer h2{
+    text-transform: uppercase;
+    text-shadow: 1px -1px 0 white,
+    -1px 1px 0 white;
+    font-size: 30px;
+    color: rgb(250, 105, 129);
+}
+
+.btn{
+    padding: 7px;
+    text-align: center;
+    margin: 10px;
+    background: rgb(250, 105, 129);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body:before{
+        min-height: 165vh;
+    }
+
+    .container {
+        font-size: 25px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    video {
+        width: 350px;
+        font-size: 12px;
+    }
+
+    .video p {
+        font-size: 30px;
+    }
+
+    footer h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}

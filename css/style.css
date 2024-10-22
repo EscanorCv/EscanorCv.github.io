@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../img/capibaras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(45deg, rgb(248, 161, 176), rgb(250, 208, 215));
+    opacity: 0.6;
+}
+
+.container{
+    position: relative;
+}
+
+.datos{
+    width: 300px;
+    text-align: center;
+    border: 4px solid rgb(250, 105, 129);
+    border-radius: 25px; 
+    padding: 20px;
+    color: rgb(250, 105, 129);
+    display: grid;
+}
+
+h2{
+    text-transform: uppercase;
+    text-shadow: 1px -1px 0 white,
+    -1px 1px 0 white;
+    font-size: 40px;
+}
+
+.input_nombre{
+    padding: 7px;
+    text-align: center;
+    margin: 10px;
+    background: rgb(255, 207, 215);
+    border: 2px solid rgb(250, 105, 129);
+    border-radius: 25px;
+}
+
+.btn{
+    padding: 7px;
+    text-align: center;
+    margin: 10px;
+    background: rgb(250, 105, 129);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
